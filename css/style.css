@@ -52,8 +52,8 @@ img {
   height: calc(100vh - 90px);
   padding: 20px;
   background-color: var(--color-black);
-  font-weight: 600;
   color: white;
+  position: relative;
 }
 #left-side header {
   height: 90px;
@@ -82,6 +82,29 @@ img {
   color: white;
 }
 
+/* LEFT SIDE FOOTER */
+.download {
+  width: 25px;
+  height: 25px;
+}
+.profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--color-grey);
+}
+.footer-leftside {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  padding-bottom: 20px;
+}
+.footer-leftside > div {
+  padding: 10px 0;
+}
+.topfoot {
+  border-bottom: 1px solid white;
+}
 /* RIGHT SIDE */
 #right-side {
   width: calc(100% - 350px);
