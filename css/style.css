@@ -45,6 +45,13 @@ img {
 .mrg-lft25 {
   margin-left: 25px;
 }
+.padding-x {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.padding-top {
+  padding-top: 15px;
+}
 .txt-color-wt {
   color: white;
 }
@@ -155,9 +162,6 @@ img {
 #main-body {
   margin-top: 90px;
   height: calc(100% - 90px);
-}
-#right-side main {
-  padding: 0 30px 30px 30px;
 }
 
 /* RIGHT SIDE HEADER */
