@@ -8,7 +8,7 @@
 }
 :root {
   --color-dark: #141922;
-  --color-dark-grey: #282828;
+  --color-dark-2: #080b12;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-grey: #a3a3a3;
@@ -29,6 +29,26 @@ img {
   width: 100%;
   display: block;
 }
+
+/* UTILITY */
+.txt-center {
+  text-align: center;
+}
+.btn {
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 15px 35px;
+}
+.mrg-rgt25 {
+  margin: 25px;
+}
+.mrg-lft25 {
+  margin-left: 25px;
+}
+.txt-color-wt {
+  color: white;
+}
+
 /* FLEX */
 .d-flex {
   display: flex;
@@ -36,8 +56,20 @@ img {
 .vertical-align {
   align-items: center;
 }
+.f-end {
+  justify-content: flex-end;
+}
+.f-center {
+  justify-content: center;
+}
+.sp-evenly {
+  justify-content: space-evenly;
+}
 .gap10 {
   gap: 10px;
+}
+.gap25 {
+  gap: 25px;
 }
 
 /* BODY */
@@ -100,16 +132,16 @@ img {
   padding-bottom: 20px;
 }
 .footer-leftside > div {
-  padding: 10px 0;
+  padding: 15px 0;
 }
 .topfoot {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--color-light-grey);
 }
+
 /* RIGHT SIDE */
 #right-side {
   width: calc(100% - 350px);
   height: calc(100vh - 90px);
-  padding: 10px;
   overflow-y: auto;
 }
 #right-side header {
@@ -118,12 +150,36 @@ img {
   width: calc(100% - 350px);
   height: 90px;
   z-index: 999;
+  background-color: rgba(8, 11, 18, 0.938);
 }
-#right-side section {
+#main-body {
   margin-top: 90px;
   height: calc(100% - 90px);
 }
+#right-side main {
+  padding: 0 30px 30px 30px;
+}
 
+/* RIGHT SIDE HEADER */
+
+/* RIGHT SIDE MAIN  */
+#right-side section {
+  background-color: var(--color-dark);
+}
+.col {
+  padding: 10px;
+}
+.card {
+  width: calc(100% / 6);
+}
+/* RIGHT SIDE NAVBAR */
+.navbar-right {
+  padding: 30px;
+}
+
+/* RIGHT SIDE RECENTLY PLAYED */
+.song-img {
+}
 /* FOOTER PLAYBAR */
 #playbar {
   position: fixed;
