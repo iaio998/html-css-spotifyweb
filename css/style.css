@@ -166,20 +166,25 @@ img {
 #right-side section {
   background-color: var(--color-dark);
 }
-.col {
-  padding: 10px;
-}
-.card {
-  width: calc(100% / 6);
-}
+
 /* RIGHT SIDE NAVBAR */
 .navbar-right {
   padding: 30px;
 }
 
 /* RIGHT SIDE RECENTLY PLAYED */
-.song-img {
+.card {
+  width: calc(100% / 6);
+  padding: 40px 0;
 }
+.card div h3,
+p {
+  line-height: 1.5;
+}
+.subtitle {
+  color: var(--color-light-grey);
+}
+
 /* FOOTER PLAYBAR */
 #playbar {
   position: fixed;
