@@ -189,6 +189,11 @@ p {
   color: var(--color-light-grey);
 }
 
+/* RIGHT SIDE MORE LISTENED */
+.song-img-circle {
+  border-radius: 50%;
+}
+
 /* FOOTER PLAYBAR */
 #playbar {
   position: fixed;
