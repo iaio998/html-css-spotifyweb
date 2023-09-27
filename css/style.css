@@ -49,6 +49,10 @@ img {
   padding-left: 25px;
   padding-right: 25px;
 }
+.padding-y {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .padding-top {
   padding-top: 15px;
 }
@@ -60,6 +64,9 @@ img {
 .d-flex {
   display: flex;
 }
+.column {
+  flex-direction: column;
+}
 .vertical-align {
   align-items: center;
 }
@@ -68,6 +75,9 @@ img {
 }
 .f-center {
   justify-content: center;
+}
+.sp-between {
+  justify-content: space-between;
 }
 .sp-evenly {
   justify-content: space-evenly;
@@ -192,7 +202,7 @@ p {
   color: var(--color-light-grey);
 }
 
-/* RIGHT SIDE MORE LISTENED */
+/* RIGHT SIDE MOST LISTENED */
 .song-img-circle {
   border-radius: 50%;
 }
@@ -206,6 +216,31 @@ p {
   z-index: 1000;
   background-color: var(--color-dark-2);
   color: var(--color-white);
+}
+#playbar a {
+  color: white;
+}
+.playbar-left {
+  width: 300px;
+}
+.playbar-right {
+  width: 300px;
+}
+.playbar-center {
+  width: 300px;
+}
+.playbar-center ul :nth-child(3) {
+  font-size: 2.5em;
+}
+#playbar i {
+  color: var(--color-light-grey);
+}
+.listening {
+  width: 50px;
+  height: 50px;
+}
+.listening-txt {
+  font-size: 0.8em;
 }
 
 /* MEDIA QUERY */
