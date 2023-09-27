@@ -227,11 +227,33 @@ p {
   width: 300px;
 }
 .playbar-center {
-  width: 300px;
+  width: 500px;
 }
+
+/* INPUT */
+input {
+  /* -webkit-appearance: none; */
+  /* outline: none; */
+  width: 100%;
+  min-width: 30%;
+  height: 5px;
+  color: var(--color-light-grey);
+  border-radius: 100px;
+}
+.playbar-center input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--color-grey);
+}
+
+/* END INPUT */
+
 .playbar-center ul :nth-child(3) {
   font-size: 2.5em;
 }
+
 #playbar i {
   color: var(--color-light-grey);
 }
