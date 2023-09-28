@@ -34,103 +34,112 @@
                     </div>
                 </header>
 
-                <main>
-                    <!-- LEFT NAVBAR -->
-                    <ul class="navbar-left">
-                        <li><a href="#" class="d-flex vertical-align gap10">
-                                <div class="icons">
-                                    <img src="img/home.svg" alt="Home">
-                                </div>
-                                <span>
-                                    Home
-                                </span>
-                            </a></li>
-                        <li><a href="#" class="d-flex vertical-align gap10">
-                                <div class="icons">
-                                    <img src="img/search.svg" alt="Home">
-                                </div>
-                                <span>
-                                    Cerca
-                                </span>
-                            </a></li>
-                        <li><a href="#" class="d-flex vertical-align gap10">
-                                <div class="icons">
-                                    <img src="img/libreria.svg" alt="Home">
-                                </div>
-                                <span>
-                                    Home
-                                </span>
-                            </a></li>
-                    </ul>
 
-                    <!-- PLAYLIST SECTION -->
-                    <div>
-                        <h2>
-                            PLAYLIST
-                        </h2>
-                        <ul class="playlist">
-                            <li>
-                                <a href="#" class="d-flex vertical-align gap10">
-                                    <div>
-                                        <i id="add-playlist" class="fa-sharp fa-solid fa-square-plus"></i>
+                <div class="main-sidebar d-flex column sp-between">
+                    <main class="">
+
+                        <!-- LEFT NAVBAR -->
+                        <ul class="navbar-left">
+                            <li><a href="#" class="d-flex vertical-align gap10">
+                                    <div class="icons">
+                                        <img src="img/home.svg" alt="Home">
                                     </div>
-                                    <div style="font-size: 1.2em;">
-                                        Crea Playlist
+                                    <span>
+                                        Home
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="d-flex vertical-align gap10">
+                                    <div class="icons">
+                                        <img src="img/search.svg" alt="Home">
                                     </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Nome Playlist
-                                </a>
-                            </li>
+                                    <span>
+                                        Cerca
+                                    </span>
+                                </a></li>
+                            <li><a href="#" class="d-flex vertical-align gap10">
+                                    <div class="icons">
+                                        <img src="img/libreria.svg" alt="Home">
+                                    </div>
+                                    <span>
+                                        Home
+                                    </span>
+                                </a></li>
                         </ul>
-                    </div>
-                </main>
 
-                <!-- FOOTER LEFT SIDE -->
-                <footer class="footer-leftside">
-                    <div class="topfoot">
-                        <a class="install d-flex vertical-align gap10" href="">
-                            <div class="download">
-                                <img src="img/download.svg" alt="Download">
-                            </div>
-                            <span>
-                                Installa app
-                            </span>
-                        </a>
-                    </div>
-                    <div class="botfoot">
-                        <a class="d-flex vertical-align gap10" href="">
-                            <img class="profile" src="img/profile.svg" alt="Profile">
-                            <span>
-                                Iacopo De Palatis
-                            </span>
-                        </a>
-                    </div>
-                </footer>
+                        <!-- PLAYLIST SECTION -->
+                        <div class="playlist-container">
+                            <h2>
+                                PLAYLIST
+                            </h2>
+                            <a href="#" class="d-flex vertical-align gap10 padding-y">
+                                <div>
+                                    <i id="add-playlist" class="fa-sharp fa-solid fa-square-plus"></i>
+                                </div>
+                                <div style="font-size: 1.2em;">
+                                    Crea Playlist
+                                </div>
+                            </a>
+                            <ul class="playlist">
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Nome Playlist
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </main>
+
+                    <!-- FOOTER LEFT SIDE -->
+                    <footer class="footer-leftside">
+                        <div class="topfoot">
+                            <a class="install d-flex vertical-align gap10" href="">
+                                <div class="download">
+                                    <img src="img/download.svg" alt="Download">
+                                </div>
+                                <span>
+                                    Installa app
+                                </span>
+                            </a>
+                        </div>
+                        <div class="botfoot">
+                            <a class="d-flex vertical-align gap10" href="">
+                                <img class="profile" src="img/profile.svg" alt="Profile">
+                                <span>
+                                    Iacopo De Palatis
+                                </span>
+                            </a>
+                        </div>
+                    </footer>
+                </div>
             </div>
 
+            <!-- LEFT SIDE 576PX -->
             <div id="left-side-plus">
                 <div>
                     <div class="laterl-bar-plus">
@@ -211,6 +220,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/metal_lifting.jpg" alt="Heavy Metal">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -220,10 +232,14 @@
                                         Subtitle
                                     </p>
                                 </div>
+
                             </div>
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/stranger.jpeg" alt="Stranger things">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -237,6 +253,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/aquietplace.jpeg" alt="A quiet place">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -250,6 +269,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/split.jpeg" alt="Split">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -263,6 +285,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/cure.jpeg" alt="A cure for wellness">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -276,6 +301,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/sinister.jpeg" alt="Sinister">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="undercard txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -302,6 +330,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/radar.jpeg" alt="Release radar">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -312,6 +343,9 @@
                             <div class="card">
                                 <div class="song-img">
                                     <img src="img/mixdaily.jpeg" alt="Daily Mix">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -334,8 +368,11 @@
                         <div class="d-flex gap25">
 
                             <div class="card">
-                                <div>
+                                <div class="box-img-circle">
                                     <img class="song-img-circle" src="img/youg.jpeg" alt="Release radar">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -347,8 +384,11 @@
                                 </div>
                             </div>
                             <div class="card">
-                                <div>
+                                <div class="box-img-circle">
                                     <img class="song-img-circle" src="img/einaudi.jpeg" alt="Release radar">
+                                    <div class="play-me">
+                                        <i class="fa-regular fa-circle-play"></i>
+                                    </div>
                                 </div>
                                 <div class="txt-center">
                                     <h3 style="padding-top: 10px;">
@@ -395,7 +435,7 @@
             </div>
 
             <div class="playbar-center d-flex column f-center">
-                <div class="">
+                <div class="play-cmd">
                     <ul class="d-flex vertical-align f-center gap25">
                         <li><i class="fa-solid fa-shuffle"></i></li>
                         <li><i class="fa-solid fa-backward-step"></i></li>

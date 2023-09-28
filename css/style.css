@@ -108,13 +108,17 @@ img {
   padding: 20px;
   background-color: var(--color-black);
   color: white;
-  position: relative;
+  overflow-y: hidden;
 }
 #left-side a {
   color: var(--color-light-grey);
 }
 #left-side header {
   height: 90px;
+}
+.main-sidebar {
+  width: 100%;
+  height: calc(100% - 90px);
 }
 
 /* LEFT SIDE PLUS */
@@ -146,6 +150,13 @@ img {
 .navbar-left li {
   padding: 5px 0;
 }
+.playlist-container {
+  max-height: 100%;
+}
+.playlist {
+  max-height: 200px;
+  overflow-y: auto;
+}
 .playlist li {
   padding: 10px 0;
 }
@@ -166,10 +177,7 @@ img {
   background-color: var(--color-grey);
 }
 .footer-leftside {
-  position: absolute;
-  bottom: 0;
   width: 85%;
-  padding-bottom: 20px;
 }
 .footer-leftside > div {
   padding: 15px 0;
@@ -204,6 +212,9 @@ img {
 #right-side section {
   background-color: var(--color-dark);
 }
+.fa-regular.fa-circle-play {
+  color: var(--color-highlight);
+}
 
 /* RIGHT SIDE NAVBAR */
 .navbar-right {
@@ -216,19 +227,32 @@ img {
   text-align: center;
   position: relative;
 }
-.navbar-right div {
+.underline-colored {
   position: absolute;
   height: 100%;
   width: 30px;
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+  transition: 0.5s ease;
   border-bottom: 3px solid var(--color-highlight);
 }
 /* RIGHT SIDE RECENTLY PLAYED */
 .card {
   width: calc(100% / 6);
   padding: 10px;
+}
+.song-img {
+  position: relative;
+}
+.play-me {
+  font-size: 3.5em;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: none;
+  color: var(--color-highlight);
 }
 .card div h3,
 p {
@@ -245,6 +269,26 @@ p {
 /* RIGHT SIDE MOST LISTENED */
 .song-img-circle {
   border-radius: 50%;
+}
+.box-img-circle {
+  position: relative;
+}
+
+/* HOVER */
+.card:hover .play-me {
+  display: block;
+}
+.card:hover {
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.1);
+  border: 1px solid var(--color-highlight);
+  color: var(--color-highlight);
+}
+.navbar-right ul li:hover .underline-colored {
+  cursor: pointer;
+  width: 100%;
 }
 
 /* FOOTER PLAYBAR */
@@ -275,20 +319,14 @@ p {
 
 /* INPUT */
 input {
-  /* -webkit-appearance: none; */
-  /* outline: none; */
+  accent-color: var(--color-grey);
+  overflow: hidden;
+  cursor: pointer;
   width: 100%;
   min-width: 30%;
   height: 5px;
   color: var(--color-light-grey);
   border-radius: 100px;
-}
-.playbar-center input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: var(--color-grey);
 }
 
 /* END INPUT */
